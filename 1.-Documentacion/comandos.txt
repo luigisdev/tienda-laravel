@@ -1,0 +1,25 @@
+Instalación de entorno de trabajo para Laravel:
+
+instalar xampp con php mayor a 7.1.3 para que laravel pueda correr sin problemas
+instalar composer apuntando a php que se encuentra en la carpeta de xampp/php/php.exe
+instalar el instalador de laravel con el siguiente comando:
+	
+	composer global require laravel/installer
+
+para crear un nuevo proyecto laravel se necesita estar ubicado en la carpeta donde se creará dicho proyecto y correr el comando siguiente
+especificando el nombre del proyecto como último parámetro:
+	
+	laravel new tienda-laravel
+
+despues de crear la base de datos en mysql, configurar la conexion a la base de datos en el archivo .env 
+y comenzar a crear los modelos y las tablas:
+
+	Pasos para crear una interacción con la base de datos:
+
+	Comando para crear un modelo en laravel que por convención se pone la primer letra de la tabla en mayúscula y en singular:
+
+		php artisan make:model Empleado
+
+	Para crear la tabla empleados se crea una migración con el comando siguiente y la convención dice que se escriba todo en minusculas:
+
+		php artisan make:migration create_empleados_table
