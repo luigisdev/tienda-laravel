@@ -23,3 +23,7 @@ y comenzar a crear los modelos y las tablas:
 	Para crear la tabla empleados se crea una migración con el comando siguiente y la convención dice que se escriba todo en minusculas:
 
 		php artisan make:migration create_empleados_table
+
+	Para crear las tablas que antes están en las migraciones de la base de datos del proyecto laravel (database/migrations) y que fueron 		creadas con los comandos anteriores y que se establecieron los campos manualmente en el archivo de la migración, se utiliza el comando 		siguiente:
+		
+		php artisan migrate
